@@ -1,0 +1,118 @@
+package webmath;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.Select;
+
+public class Webmath_vijay {
+
+	
+		// TODO Auto-generated method stub
+		public static void main(String[] args) throws InterruptedException {
+			
+			System.setProperty("webdriver.chrome.driver","E:\\Testing\\chromedriver.exe" );
+			
+			WebDriver driver =new ChromeDriver();
+			
+			driver.navigate().to("https://www.webmath.com");
+			driver.manage().window().maximize();
+			//Mathforeveryone
+			driver.findElement(By.id("navBox-1")).click();
+			//Dropdown - 1
+			WebElement ddown = driver.findElement(By.name("topicItem"));
+			Select select = new Select(ddown);
+			select.selectByIndex(1);
+			driver.navigate().back();
+			//Dropdown - 2 
+			WebElement ddown1 = driver.findElement(By.name("topicItem"));
+			Select select1 = new Select(ddown1);
+			select1.selectByIndex(2);
+			driver.navigate().back();
+			//Dropdown - 3
+			WebElement ddownd = driver.findElement(By.name("topicItem"));
+			Select selectdd = new Select(ddownd);
+			selectdd.selectByIndex(3);
+			driver.navigate().back();
+			//Dropdown - 4
+			WebElement ddown2 = driver.findElement(By.name("topicItem"));
+			Select select2 = new Select(ddown2);
+			select2.selectByIndex(4);
+			driver.navigate().back();
+			//Dropdown - 5
+			WebElement ddown3 = driver.findElement(By.name("topicItem"));
+			Select select3 = new Select(ddown3);
+			select3.selectByIndex(5);
+			driver.navigate().back();
+			//Dropdown - 6
+			WebElement ddown4 = driver.findElement(By.name("topicItem"));
+			Select select4 = new Select(ddown4);
+			select4.selectByIndex(6);
+			driver.navigate().back();
+			//Dropdown - 7
+			WebElement ddown5 = driver.findElement(By.name("topicItem"));
+			Select select5 = new Select(ddown5);
+			select5.selectByIndex(7);
+			driver.navigate().back();
+			//Dropdown - 8
+			WebElement ddown6 = driver.findElement(By.name("topicItem"));
+			Select select6 = new Select(ddown6);
+			select6.selectByIndex(8);
+			driver.navigate().back();
+			//Dropdown - 9
+			WebElement ddown7 = driver.findElement(By.name("topicItem"));
+			Select select7 = new Select(ddown7);
+			select7.selectByIndex(9);
+			driver.navigate().back();
+			//Dropdown - 10
+			WebElement ddown8 = driver.findElement(By.name("topicItem"));
+			Select select8 = new Select(ddown8);
+			select8.selectByIndex(10);
+			driver.navigate().back();
+			//Dropdown - 11
+			WebElement ddown9 = driver.findElement(By.name("topicItem"));
+			Select select9 = new Select(ddown9);
+			select9.selectByIndex(11);
+			driver.navigate().back();
+			//Dropdown - 12
+			WebElement ddown10 = driver.findElement(By.name("topicItem"));
+			Select select10 = new Select(ddown10);
+			select10.selectByIndex(12);
+			driver.navigate().back();
+			//Dropdown - 13
+			WebElement ddown11 = driver.findElement(By.name("topicItem"));
+			Select select11 = new Select(ddown11);
+			select11.selectByIndex(13);
+			driver.navigate().back();
+			//Dropdown - 14
+			WebElement ddown12 = driver.findElement(By.name("topicItem"));
+			Select select12 = new Select(ddown12);
+			select12.selectByIndex(14);
+			driver.navigate().back();
+			//Dropdown - 15
+			WebElement ddown13 = driver.findElement(By.name("topicItem"));
+			Select select13 = new Select(ddown13);
+			select13.selectByIndex(15);
+			driver.navigate().back();
+			//Dropdown - 16
+			WebElement ddown14 = driver.findElement(By.name("topicItem"));
+			Select select14 = new Select(ddown14);
+			select14.selectByIndex(16);
+			driver.navigate().back();
+			//Dropdown - 17
+			WebElement ddown15 = driver.findElement(By.name("topicItem"));
+			Select select15 = new Select(ddown15);
+			select15.selectByIndex(17);
+			driver.navigate().back();
+			//Dropdown - 18
+			WebElement ddown16 = driver.findElement(By.name("topicItem"));
+			Select select16 = new Select(ddown16);
+			select15.selectByIndex(18);
+			driver.navigate().back();
+			Thread.sleep(20000);
+			
+			//driver.close();
+	}
+
+}

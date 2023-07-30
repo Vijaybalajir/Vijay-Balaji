@@ -1,0 +1,39 @@
+package automation_Testing;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Webmath_vijay1 {
+
+		// TODO Auto-generated method stub
+		// TODO Auto-generated method stub
+				public static void main(String[] args) throws InterruptedException {
+					
+					System.setProperty("webdriver.chrome.driver","E:\\Testing\\chromedriver.exe" );
+					
+					WebDriver driver =new ChromeDriver();
+					
+					driver.navigate().to("https://www.webmath.com");
+					driver.manage().window().maximize();
+					driver.findElement(By.xpath("/html/body/div/div[2]/div[1]/div/div[2]/div/div/div[2]/a")).click();
+					driver.findElement(By.xpath("html/body/div/div[2]/div[1]/div/div[3]/div[1]/div[3]/table/tbody/tr[2]/td[1]/font/font/a[1]")).click();
+					driver.navigate().back();
+					driver.findElement(By.xpath("/html/body/div/div[2]/div[1]/div/div[3]/div[1]/div[3]/table/tbody/tr[2]/td[2]/font/font/a")).click();
+					driver.navigate().back();
+					driver.findElement(By.xpath("/html/body/div/div[2]/div[1]/div/div[3]/div[1]/div[3]/table/tbody/tr[1]/td[2]/font/font/a[1]")).click();
+					driver.navigate().back();
+					driver.findElement(By.xpath("/html/body/div/div[2]/div[1]/div/div[3]/div[1]/div[3]/table/tbody/tr[1]/td[1]/font/font/a[2]")).click();
+					driver.navigate().back();
+					driver.findElement(By.xpath("/html/body/div/div[2]/div[1]/div/div[3]/div[1]/div[3]/table/tbody/tr[1]/td[2]/font/font/a[4]")).click();
+					driver.navigate().back();
+					driver.findElement(By.xpath("/html/body/div/div[2]/div[1]/div/div[3]/div[1]/div[3]/table/tbody/tr[1]/td[2]/font/font/a[3]")).click();
+					driver.navigate().back();
+					driver.findElement(By.xpath("/html/body/div/div[2]/div[1]/div/div[3]/div[1]/div[3]/table/tbody/tr[1]/td[1]/font/font/a[3]")).click();
+					driver.navigate().back();
+					Thread.sleep(20000);
+					
+					
+				}			
+
+}
